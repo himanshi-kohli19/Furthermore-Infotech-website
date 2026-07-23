@@ -1,0 +1,46 @@
+"use client";
+
+import { useState } from "react";
+
+const navItems = [
+  ["Home", "#top"],
+  ["Services", "#services"],
+  ["Solutions", "#solutions"],
+  ["About", "#about"],
+  ["Insights", "#insights"],
+  ["Contact", "#contact"]
+];
+
+export default function Header() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <header className="site-header" id="top">
+      <div className="container header-inner">
+        <a className="brand" href="#top" aria-label="Furthermore homepage" onClick={() => setOpen(false)}>
+          <span className="brand-name">Furthermore</span>
+          <span className="brand-subtitle">AI • Blockchain • Software</span>
+        </a>
+        <button
+          className="nav-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded={open}
+          onClick={() => setOpen((current) => !current)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+        <nav className={open ? "site-nav is-open" : "site-nav"} aria-label="Primary navigation">
+          {navItems.map(([label, href]) => (
+            <a key={href} href={href} onClick={() => setOpen(false)}>
+              {label}
+            </a>
+          ))}
+        </nav>
+        <a className="header-cta" href="#contact">Get in Touch</a>
+      </div>
+    </header>
+  );
+}
