@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import ContactForm from "./components/ContactForm";
 
 const services = [
   {
@@ -344,51 +345,8 @@ export default function HomePage() {
               <p>
                 One call. We'll scope your product, walk you through the Standard, and quote a price an agency can't.
               </p>
-              <div className="contact-chips">
-                <span>hello@yourdomain.com</span>
-                <span>India / Global</span>
-                <span>Architecture. Tests. QA. Audit report.</span>
-              </div>
             </div>
-            <form className="contact-form" action="#" method="get">
-              <label>
-                <span>Full Name</span>
-                <input type="text" name="name" placeholder="Your name" required />
-              </label>
-              <label>
-                <span>Work Email</span>
-                <input type="email" name="email" placeholder="you@company.com" required />
-              </label>
-              <label>
-                <span>Service Required</span>
-                <select name="service" required defaultValue="">
-                  <option value="" disabled>Select a service</option>
-                  <option>AI Agent Development</option>
-                  <option>AI Automation</option>
-                  <option>Blockchain Development</option>
-                  <option>RWA Tokenization</option>
-                  <option>Digital Wallet Development</option>
-                  <option>Custom Software Development</option>
-                  <option>Web or Mobile App Development</option>
-                </select>
-              </label>
-              <label>
-                <span>Budget</span>
-                <select name="budget" defaultValue="">
-                  <option value="" disabled>Select budget range</option>
-                  <option>Exploring options</option>
-                  <option>Under $10,000</option>
-                  <option>$10,000-$25,000</option>
-                  <option>$25,000-$50,000</option>
-                  <option>$50,000+</option>
-                </select>
-              </label>
-              <label className="full-field">
-                <span>Project Details</span>
-                <textarea name="details" rows="4" placeholder="What should we build?" required />
-              </label>
-              <button className="btn btn-primary" type="submit">Book a Strategy Call</button>
-            </form>
+            <ContactForm />
           </div>
         </section>
       </main>
