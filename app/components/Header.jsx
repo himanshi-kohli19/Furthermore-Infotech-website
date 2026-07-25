@@ -4,8 +4,9 @@ import { useState } from "react";
 
 const navItems = [
   ["Home", "#top"],
+  ["Standard", "#standard"],
   ["Services", "#services"],
-  ["Solutions", "#solutions"],
+  ["Regulated", "#regulated-markets"],
   ["Stack", "#technology-stack"],
   ["Contact", "#contact"]
 ];
@@ -38,7 +39,7 @@ export default function Header() {
             </a>
           ))}
         </nav>
-        <a className="header-cta" href="#contact">Get in Touch</a>
+        <a className="header-cta" href="#contact">Book a Strategy Call</a>
       </div>
     </header>
   );
