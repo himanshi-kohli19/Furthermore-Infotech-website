@@ -368,7 +368,6 @@ export default function HomePage() {
             <a href="#contact">Contact</a>
           </nav>
           <div className="footer-contact">
-            <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
             <p>India / Serving clients globally</p>
           </div>
         </div>
