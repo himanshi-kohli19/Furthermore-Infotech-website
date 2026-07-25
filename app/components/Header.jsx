@@ -6,8 +6,7 @@ const navItems = [
   ["Home", "#top"],
   ["Services", "#services"],
   ["Solutions", "#solutions"],
-  ["About", "#about"],
-  ["Insights", "#insights"],
+  ["Stack", "#technology-stack"],
   ["Contact", "#contact"]
 ];
 
@@ -19,7 +18,7 @@ export default function Header() {
       <div className="container header-inner">
         <a className="brand" href="#top" aria-label="Furthermore homepage" onClick={() => setOpen(false)}>
           <span className="brand-name">Furthermore</span>
-          <span className="brand-subtitle">AI • Blockchain • Software</span>
+          <span className="brand-subtitle">AI / Blockchain / Software</span>
         </a>
         <button
           className="nav-toggle"
