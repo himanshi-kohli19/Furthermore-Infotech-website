@@ -223,8 +223,8 @@ export default function HomePage() {
               </div>
             </div>
             <div className="hero-showcase" aria-label="Furthermore product team workspace">
-              <div className="hero-visual-frame">
-                <img src="/assets/images/furthermore/hero-office-window.png" alt="Furthermore team working in a bright office with city views" />
+              <div className="hero-visual-frame hero-visual-frame-shaped">
+                <img src="/assets/images/furthermore/hero-shaped-office.png" alt="Furthermore team working in a bright office with city views" />
               </div>
             </div>
           </div>
