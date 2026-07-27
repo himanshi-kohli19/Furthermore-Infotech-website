@@ -26,6 +26,11 @@ export const metadata = {
     "system design consulting services"
   ],
   authors: [{ name: "Furthermore" }],
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png"
+  },
   alternates: {
     canonical: "https://www.yourdomain.com/"
   },

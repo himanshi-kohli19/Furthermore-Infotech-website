@@ -18,8 +18,8 @@ export default function Header() {
     <header className="site-header" id="top">
       <div className="container header-inner">
         <a className="brand" href="#top" aria-label="Furthermore homepage" onClick={() => setOpen(false)}>
-          <span className="brand-name">Furthermore</span>
-          <span className="brand-subtitle">AI / Blockchain / Software</span>
+          <img className="brand-logo" src="/assets/images/furthermore/furthermore-logo.png" alt="" />
+          <span className="sr-only">Furthermore - AI / Blockchain / Software</span>
         </a>
         <button
           className="nav-toggle"

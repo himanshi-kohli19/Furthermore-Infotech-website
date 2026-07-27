@@ -25,39 +25,35 @@ const services = [
   }
 ];
 
-const heroHighlights = [
+const heroCarouselCards = [
   {
-    title: "Architecture spec",
-    text: "A dedicated Solution Architect and Product Manager translate the business goal before code begins.",
+    title: "The Furthermore Standard",
+    eyebrow: "Delivery system",
+    text: "One process connects architecture, AI-assisted development, human QA and written audit evidence so every release is accountable.",
+    image: "/assets/images/furthermore/team-strategy.webp",
+    alt: "Product team reviewing software delivery and QA evidence"
+  },
+  {
+    title: "Architecture and product spec",
+    eyebrow: "Before build",
+    text: "Your goals become a clear technical plan, product roadmap and compliance-aware build scope before development starts.",
     image: "/assets/images/furthermore/secure-product-engineering.jpg",
     alt: "Engineer reviewing secure product architecture on a code screen"
   },
   {
-    title: "Passing test suite",
-    text: "AI coding agents build test-driven software around your data, tools and approval flows.",
+    title: "Tested software delivery",
+    eyebrow: "During build",
+    text: "Features are built with automated checks, reviewed by senior engineers and tested against real workflows before release.",
     image: "/assets/images/furthermore/code-review.jpeg",
     alt: "Developer reviewing test-driven code on a large monitor"
   },
   {
     title: "Written audit report",
-    text: "Senior engineers and human QA verify the delivery so third parties can inspect the work.",
+    eyebrow: "After build",
+    text: "You receive documented testing, QA notes and a delivery report that helps third parties inspect what was built.",
     image: "/assets/images/furthermore/audit-dashboard.jpeg",
     alt: "Audit report dashboard with compliance review visuals"
   }
-];
-
-const heroCarouselCards = [
-  {
-    title: "The Furthermore Standard",
-    eyebrow: "Architecture / QA / Audit",
-    text: "Architecture specs, passing tests, human QA logs and written audit reports from one accountable delivery process.",
-    image: "/assets/images/furthermore/team-strategy.webp",
-    alt: "Product team reviewing software delivery and QA evidence"
-  },
-  ...heroHighlights.map((item) => ({
-    ...item,
-    eyebrow: "Proof point"
-  }))
 ];
 
 const standardGates = [
@@ -202,16 +198,11 @@ export default function HomePage() {
             <div className="hero-copy">
               <p className="eyebrow hero-eyebrow">AI / BLOCKCHAIN / WEB3 / AUDIT-READY SOFTWARE</p>
               <h1 id="hero-title">
-                AI and Blockchain Software Built to Pass Every Audit - Priced to Move Your Business
+                Engineering Solutions That Scale.
               </h1>
               <p className="hero-kicker">
                 Enterprise-grade development at startup-friendly prices.
               </p>
-              <div className="hero-description">
-                <p>
-                  Furthermore is a specialist AI and blockchain development company for startups and growing businesses that need proof, not promises.
-                </p>
-              </div>
               <div className="hero-actions">
                 <a className="btn btn-primary" href="#contact">Start Your Project</a>
                 <a className="btn btn-secondary" href="#standard">See The Standard</a>
@@ -233,8 +224,8 @@ export default function HomePage() {
         <section className="hero-carousel-section" aria-labelledby="hero-carousel-title">
           <div className="container">
             <div className="hero-carousel-heading">
-              <p className="eyebrow">Delivery proof</p>
-              <h2 id="hero-carousel-title">The evidence trail behind every audit-ready build.</h2>
+              <p className="eyebrow">What you get</p>
+              <h2 id="hero-carousel-title">Every build comes with proof.</h2>
             </div>
             <div className="hero-card-carousel" aria-label="Audit-ready delivery cards">
               {heroCarouselCards.map((item) => (
@@ -388,8 +379,8 @@ export default function HomePage() {
         <div className="container footer-grid">
           <div className="footer-brand-block">
             <a className="brand footer-logo" href="#top">
-              <span className="brand-name">Furthermore</span>
-              <span className="brand-subtitle">AI / Blockchain / Software</span>
+              <img className="brand-logo footer-brand-logo" src="/assets/images/furthermore/furthermore-logo-dark.png" alt="" />
+              <span className="sr-only">Furthermore - AI / Blockchain / Software</span>
             </a>
             <p>Audit-ready AI, blockchain and software solutions built for what comes next.</p>
             <div className="footer-social" aria-label="Social links">

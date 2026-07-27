@@ -9,8 +9,8 @@ export default function ThankYouPage() {
       <section className="thank-you-hero" aria-labelledby="thank-you-title">
         <div className="container thank-you-panel">
           <a className="brand thank-you-logo" href="/">
-            <span className="brand-name">Furthermore</span>
-            <span className="brand-subtitle">AI / Blockchain / Software</span>
+            <img className="brand-logo" src="/assets/images/furthermore/furthermore-logo.png" alt="" />
+            <span className="sr-only">Furthermore - AI / Blockchain / Software</span>
           </a>
           <p className="eyebrow">Request received</p>
           <h1 id="thank-you-title">Thank you. We have your strategy call request.</h1>
