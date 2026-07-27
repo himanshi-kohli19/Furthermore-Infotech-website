@@ -3,24 +3,24 @@ import ContactForm from "./components/ContactForm";
 
 const services = [
   {
-    title: "AI Development and Automation",
+    title: "AI Agent Development and Automation",
     eyebrow: "AI systems",
     icon: "/assets/images/service-icon-01.png",
-    text: "AI agents, RAG assistants and workflow automation built around your data, tools and approval flows.",
+    text: "AI agents, RAG assistants and workflow automation built around your data, tools, approvals and audit logs.",
     items: ["AI agent development", "RAG applications", "Business automation"]
   },
   {
-    title: "Blockchain and Web3 Development",
+    title: "Blockchain, Web3 and RWA Development",
     eyebrow: "Digital assets",
     icon: "/assets/images/service-icon-02.png",
-    text: "Secure Web3 products for RWA tokenization, digital wallets, smart contracts, payments and identity.",
+    text: "Secure Web3 products for RWA tokenization, digital wallets, smart contracts, payments and on-chain identity.",
     items: ["RWA tokenization", "Digital wallets", "Smart contracts"]
   },
   {
-    title: "Custom Software Development",
+    title: "Custom Software and SaaS Engineering",
     eyebrow: "Product engineering",
     icon: "/assets/images/service-icon-03.png",
-    text: "The engineering backbone that ships our AI and blockchain work - fast, scalable web apps, mobile apps, SaaS platforms, dashboards and APIs engineered to scale.",
+    text: "Scalable Next.js web apps, mobile apps, SaaS platforms, dashboards and APIs engineered for real product operations.",
     items: ["Next.js development", "Mobile apps", "API integrations"]
   }
 ];
@@ -29,29 +29,43 @@ const heroHighlights = [
   {
     title: "Architecture spec",
     text: "A dedicated Solution Architect and Product Manager translate the business goal before code begins.",
-    image: "/assets/images/video-big-thumb-03.png",
-    alt: "Architecture planning for audit-ready AI and blockchain software"
+    image: "/assets/images/furthermore/secure-product-engineering.jpg",
+    alt: "Engineer reviewing secure product architecture on a code screen"
   },
   {
     title: "Passing test suite",
     text: "AI coding agents build test-driven software around your data, tools and approval flows.",
-    image: "/assets/images/portfolio-01.jpg",
-    alt: "Test-driven AI and blockchain product interface"
+    image: "/assets/images/furthermore/code-review.jpeg",
+    alt: "Developer reviewing test-driven code on a large monitor"
   },
   {
     title: "Written audit report",
     text: "Senior engineers and human QA verify the delivery so third parties can inspect the work.",
-    image: "/assets/images/portfolio-04.jpg",
-    alt: "Written software audit report and quality review"
+    image: "/assets/images/furthermore/audit-dashboard.jpeg",
+    alt: "Audit report dashboard with compliance review visuals"
   }
 ];
 
+const heroCarouselCards = [
+  {
+    title: "The Furthermore Standard",
+    eyebrow: "Architecture / QA / Audit",
+    text: "Architecture specs, passing tests, human QA logs and written audit reports from one accountable delivery process.",
+    image: "/assets/images/furthermore/team-strategy.webp",
+    alt: "Product team reviewing software delivery and QA evidence"
+  },
+  ...heroHighlights.map((item) => ({
+    ...item,
+    eyebrow: "Proof point"
+  }))
+];
+
 const standardGates = [
-  ["01", "Architects plan", "Every project is assigned a dedicated Solution Architect and Product Manager. They translate your business goals into a system architecture, product roadmap and compliance requirements - before a single line of code is written.", "Architecture and product spec"],
-  ["02", "Agents build", "Our proprietary coding agents write test-driven code around the clock - every feature backed by tests before it reaches review.", "Passing test suite"],
-  ["03", "Humans break", "Senior engineers review every line. Human QA hunts the bugs machines miss - real devices, real flows, real edge cases.", "Review and QA log"],
-  ["04", "Auditors sign off", "Before delivery, we audit the finished product against third-party standards: security, performance, code quality and coverage.", "Written audit report"],
-  ["05", "You verify", "The report is yours. Hand it to a future CTO, an investor, or any third-party audit firm. It will hold.", "Your proof"]
+  ["01", "Architects plan", "A Solution Architect and Product Manager turn your goals into system architecture, product roadmap and compliance requirements before code begins.", "Architecture and product spec"],
+  ["02", "Agents build", "AI coding agents accelerate test-driven software development with every feature backed by automated checks before review.", "Passing test suite"],
+  ["03", "Humans break", "Senior engineers and human QA test real devices, approval flows and edge cases before anything is released.", "Review and QA log"],
+  ["04", "Auditors sign off", "Before delivery, we review security, performance, code quality and coverage against third-party expectations.", "Written audit report"],
+  ["05", "You verify", "You receive the proof: source code, architecture notes, QA evidence and an audit report investors can inspect.", "Your proof"]
 ];
 
 const regulatedMarkets = [
@@ -70,12 +84,12 @@ const regulatedMarkets = [
 ];
 
 const stack = [
-  ["AI", "OpenAI, Gemini, Anthropic, LangChain, RAG, vector databases, LLM agents"],
-  ["Frontend", "Next.js, React, TypeScript, JavaScript, HTML5, CSS3"],
-  ["Backend", "Node.js, Python, REST APIs, WebSockets, microservices"],
-  ["Blockchain", "Ethereum, Polygon, Solidity, smart contracts, ERC standards, Web3"],
-  ["Automation", "n8n, Zapier, Make, webhooks, CRM automation, orchestration"],
-  ["Data Systems", "PostgreSQL, MySQL, MongoDB, Redis, vector databases, analytics"]
+  ["Artificial Intelligence", "OpenAI • Azure OpenAI • Gemini • Anthropic • LangChain • LangGraph • LlamaIndex • RAG • LLM Agents • Multi-Agent Systems • MCP • AI Guardrails • Prompt Management • Model Evaluation • Human-in-the-Loop AI"],
+  ["Frontend Engineering", "Next.js • React • TypeScript • JavaScript • HTML5 • CSS3 • Tailwind CSS • Material UI • Shadcn UI • Redux Toolkit • Zustand • React Query • Progressive Web Apps • Responsive Design • Accessibility"],
+  ["Backend Engineering", "Node.js • NestJS • Express.js • Python • FastAPI • Django • REST APIs • GraphQL • WebSockets • gRPC • Microservices • Serverless Functions • Background Workers • Event-Driven Architecture"],
+  ["Blockchain and Web3", "Ethereum • Polygon • Base • Arbitrum • Optimism • Solidity • Smart Contracts • ERC-20 • ERC-721 • ERC-1155 • Account Abstraction • Chainlink • IPFS • Ethers.js • Viem • Hardhat • Foundry • Web3 Integrations"],
+  ["Automation and Integrations", "n8n • Zapier • Make • Webhooks • API Integrations • CRM Automation • ERP Integration • Email Automation • Workflow Orchestration • Approval Workflows • Human-in-the-Loop Automation"],
+  ["Data Systems", "PostgreSQL • MySQL • MongoDB • Redis • Supabase • Firebase • Elasticsearch • OpenSearch • Data Pipelines • Real-Time Analytics • Business Intelligence"]
 ];
 
 const industries = [
@@ -86,7 +100,27 @@ const industries = [
   "Marketing",
   "SaaS",
   "Supply Chain",
-  "Enterprise"
+  "Enterprise",
+  "Healthcare",
+  "Insurance",
+  "Banking",
+  "Logistics",
+  "Manufacturing",
+  "Retail",
+  "Travel and Hospitality",
+  "Media and Entertainment",
+  "Telecommunications",
+  "Energy and Utilities",
+  "Automotive",
+  "LegalTech",
+  "HRTech",
+  "AdTech",
+  "MarTech",
+  "RegTech",
+  "Government",
+  "Professional Services",
+  "Gaming",
+  "Web3 and Digital Assets"
 ];
 
 const faqs = [
@@ -104,7 +138,7 @@ const organizationSchema = {
   name: "Furthermore",
   url: "https://www.yourdomain.com/",
   description:
-    "Furthermore is a specialist AI and blockchain software development company building audit-ready products with dedicated architecture, AI coding agents, senior engineering review, human QA and written audit reports.",
+    "Furthermore is a specialist AI, blockchain and Web3 software development company building audit-ready products with dedicated architecture, AI coding agents, senior engineering review, human QA and written audit reports.",
   areaServed: ["India", "Global"],
   knowsAbout: [
     "AI development company",
@@ -166,19 +200,18 @@ export default function HomePage() {
         <section className="hero" aria-labelledby="hero-title">
           <div className="container hero-grid">
             <div className="hero-copy">
-              <p className="eyebrow">AI / BLOCKCHAIN / AUDIT-READY SOFTWARE</p>
+              <p className="eyebrow hero-eyebrow">AI / BLOCKCHAIN / WEB3 / AUDIT-READY SOFTWARE</p>
               <h1 id="hero-title">
-                AI and Blockchain Software Built to Pass Every Audit - Priced to Move Your Business <span>Furthermore</span>
+                AI and Blockchain Software Built to Pass Every Audit - Priced to Move Your Business
               </h1>
               <p className="hero-kicker">
-                Specialist AI and blockchain development for startups and growing businesses that need proof, not promises.
+                Enterprise-grade development at startup-friendly prices.
               </p>
-              <p className="hero-description">
-                Furthermore is a specialist AI and blockchain software development company for startups and growing businesses.
-                Every project is led by a dedicated Solution Architect and Product Manager; AI coding agents build test-driven
-                software; senior engineers and human QA verify it; every delivery ships with a written audit report that stands
-                up to third-party and regulatory review - at below-agency prices.
-              </p>
+              <div className="hero-description">
+                <p>
+                  Furthermore is a specialist AI and blockchain development company for startups and growing businesses that need proof, not promises.
+                </p>
+              </div>
               <div className="hero-actions">
                 <a className="btn btn-primary" href="#contact">Start Your Project</a>
                 <a className="btn btn-secondary" href="#standard">See The Standard</a>
@@ -189,29 +222,31 @@ export default function HomePage() {
                 <span><strong>Auditors sign off</strong> Written proof you can verify</span>
               </div>
             </div>
-
-            <div className="hero-showcase" aria-label="Audit-ready AI and blockchain service highlights">
-              <div className="showcase-panel">
-                <div className="hero-product-card">
-                  <img src="/assets/images/banner-right-image.png" alt="Audit-ready AI blockchain and custom software development" />
-                  <div>
-                    <span>The Furthermore Standard</span>
-                    <strong>Build software that stands up to CTOs, auditors and regulators.</strong>
-                    <p>Architecture specs, passing tests, human QA logs and written audit reports from one accountable delivery process.</p>
-                  </div>
-                </div>
-                <div className="hero-highlight-grid">
-                  {heroHighlights.map((item) => (
-                    <article key={item.title}>
-                      <img src={item.image} alt={item.alt} />
-                      <div>
-                        <h2>{item.title}</h2>
-                        <p>{item.text}</p>
-                      </div>
-                    </article>
-                  ))}
-                </div>
+            <div className="hero-showcase" aria-label="Furthermore product team workspace">
+              <div className="hero-visual-frame">
+                <img src="/assets/images/furthermore/hero-office-window.png" alt="Furthermore team working in a bright office with city views" />
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="hero-carousel-section" aria-labelledby="hero-carousel-title">
+          <div className="container">
+            <div className="hero-carousel-heading">
+              <p className="eyebrow">Delivery proof</p>
+              <h2 id="hero-carousel-title">The evidence trail behind every audit-ready build.</h2>
+            </div>
+            <div className="hero-card-carousel" aria-label="Audit-ready delivery cards">
+              {heroCarouselCards.map((item) => (
+                <article className="hero-carousel-card" key={item.title}>
+                  <img src={item.image} alt={item.alt} />
+                  <div>
+                    <span>{item.eyebrow}</span>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
         </section>
@@ -222,7 +257,7 @@ export default function HomePage() {
               <p className="eyebrow">The Furthermore Standard</p>
               <h2 id="standard-title">Architects plan. Agents build. Humans break. Auditors sign off.</h2>
               <p>
-                You can't read code. You shouldn't have to. Every project passes five gates - and every gate leaves proof you can read.
+                You can't read code. You shouldn't have to. Every project passes five quality gates - and every gate leaves proof you can read, share and verify.
               </p>
               <p className="standard-closer">Don't trust us. Trust the process.</p>
             </div>
@@ -242,14 +277,14 @@ export default function HomePage() {
         <section className="economics section-shell" aria-labelledby="economics-title">
           <div className="container economics-grid">
             <div className="video-frame">
-              <img src="/assets/images/video-big-thumb-01.png" alt="Senior engineers reviewing AI-written code and audit reports" />
+              <img src="/assets/images/furthermore/ai-product-workflow.avif" alt="AI product workflow and software engineering team collaboration" />
             </div>
             <div>
               <p className="eyebrow">The economics</p>
               <h2 id="economics-title">Why is Furthermore cheaper than a traditional agency?</h2>
               <p>
-                Because our agents don't bill by the hour. Agencies charge you for senior engineers typing.
-                We charge you for senior engineers thinking - architecting, reviewing, breaking, and auditing what our AI agents
+                Because our AI coding agents don't bill by the hour. Agencies charge you for senior engineers typing.
+                We charge you for senior engineers thinking - architecting, reviewing, testing and auditing what agents
                 build at machine speed. Fewer billable hours. Same senior judgment. Stricter quality gates.
               </p>
               <p className="economics-punchline">Agents cut the hours. Not the corners.</p>
@@ -260,9 +295,8 @@ export default function HomePage() {
         <section className="services section-shell alt-section" id="services" aria-labelledby="services-title">
           <div className="container">
             <SectionHeading eyebrow="What we build" title="Specialists in AI and blockchain - not another generalist dev shop.">
-              AI and blockchain are not services we bolted on. They are the core practice - backed by product engineering that
-              makes them ship-ready. A focused team for AI development, blockchain development, Next.js web development, mobile
-              apps and custom software engineering.
+              AI and blockchain are not services we bolted on. They are the core practice - backed by product engineering that makes them ship-ready.
+              We build audit-ready AI systems, blockchain products, SaaS platforms and operational software for teams that need proof from day one.
             </SectionHeading>
             <div className="service-grid">
               {services.map((service) => (
@@ -289,9 +323,8 @@ export default function HomePage() {
               <p className="eyebrow">Regulated markets</p>
               <h2 id="regulated-title">Software that regulators can inspect.</h2>
               <p>
-                If you operate in finance, virtual assets or AI, your software is a regulatory exhibit. We engineer the technical
-                controls regulators expect - audit trails, data protection, KYC/AML hooks, model documentation - into the build
-                from day one, not retrofitted after a warning letter.
+                If you operate in fintech, virtual assets, Web3 or AI, your software is a regulatory exhibit. We engineer the technical
+                controls regulators expect - audit trails, data protection, KYC/AML hooks and model documentation - into the build from day one.
               </p>
               <p className="regulated-closer">We engineer the controls. Your legal counsel owns the license. Together, you pass the inspection.</p>
             </div>
@@ -353,14 +386,21 @@ export default function HomePage() {
 
       <footer className="site-footer">
         <div className="container footer-grid">
-          <div>
+          <div className="footer-brand-block">
             <a className="brand footer-logo" href="#top">
               <span className="brand-name">Furthermore</span>
               <span className="brand-subtitle">AI / Blockchain / Software</span>
             </a>
             <p>Audit-ready AI, blockchain and software solutions built for what comes next.</p>
+            <div className="footer-social" aria-label="Social links">
+              <a href="https://www.linkedin.com/company/furthermore-technologies" target="_blank" rel="noreferrer" aria-label="Furthermore on LinkedIn">in</a>
+              <a href="https://x.com/furthermoretech" target="_blank" rel="noreferrer" aria-label="Furthermore on X">X</a>
+              <a href="https://www.instagram.com/furthermoretech" target="_blank" rel="noreferrer" aria-label="Furthermore on Instagram">Ig</a>
+              <a href="https://www.facebook.com/furthermoretech" target="_blank" rel="noreferrer" aria-label="Furthermore on Facebook">f</a>
+            </div>
           </div>
-          <nav aria-label="Footer navigation">
+          <nav className="footer-nav" aria-label="Footer navigation">
+            <span>Explore</span>
             <a href="#standard">Standard</a>
             <a href="#services">Services</a>
             <a href="#regulated-markets">Regulated Markets</a>
@@ -368,6 +408,7 @@ export default function HomePage() {
             <a href="#contact">Contact</a>
           </nav>
           <div className="footer-contact">
+            <span>Location</span>
             <p>India / Serving clients globally</p>
           </div>
         </div>
