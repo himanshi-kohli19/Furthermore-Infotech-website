@@ -272,7 +272,7 @@ export default function HomePage() {
             </div>
             <div>
               <p className="eyebrow">The economics</p>
-              <h2 id="economics-title">Why is Furthermore cheaper than a traditional agency?</h2>
+              <h2 id="economics-title">Why is Furthermore cheaper than a traditional software development studio?</h2>
               <p>
                 Because our AI coding agents don't bill by the hour. Agencies charge you for senior engineers typing.
                 We charge you for senior engineers thinking - architecting, reviewing, testing and auditing what agents

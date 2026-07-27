@@ -573,6 +573,10 @@ textarea {
   font-weight: 900;
 }
 
+#economics-title {
+  font-size: clamp(24px, 2.05vw, 33px);
+}
+
 .section-heading p:last-child,
 .solutions-grid > div > p,
 .standard-grid > div > p,
