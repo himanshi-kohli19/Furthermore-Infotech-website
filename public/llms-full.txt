@@ -1,0 +1,60 @@
+# Furthermore - Full Site Context
+
+Canonical URL: https://www.furmotech.com/
+Organization: Furthermore Technologies
+Primary location: India
+Service area: Global
+Last updated: 2026-07-29
+
+## Summary
+
+Furthermore builds audit-ready AI agents, blockchain platforms, Web3 products and custom software with architecture, test-driven development, human QA and written audit reports.
+
+Furthermore positions itself around audit-ready delivery: architects plan the system, AI coding agents accelerate implementation, senior engineers review the work, human QA tests real workflows, and an audit report documents what was delivered.
+
+## Core Services
+
+- AI agent development and automation
+- RAG applications and workflow automation
+- Blockchain, Web3 and RWA tokenization development
+- Digital wallet and smart contract development
+- Custom software, SaaS, web and mobile app engineering
+- Compliance-aware product engineering for regulated markets
+
+## Delivery Standard
+
+- Architects plan: a Solution Architect and Product Manager define system architecture, roadmap, and compliance-aware scope before implementation.
+- Agents build: AI coding agents accelerate test-driven development while maintaining automated checks.
+- Humans break: senior engineers and QA teams test real workflows, devices, approvals, and edge cases.
+- Auditors sign off: security, performance, code quality, and coverage are reviewed before delivery.
+- Clients verify: deliverables include source code, architecture notes, QA evidence, test results, and written audit reporting.
+
+## Markets and Compliance Context
+
+Furthermore builds for fintech, virtual assets, Web3, AI, SaaS, enterprise, healthcare, insurance, banking, logistics, manufacturing, retail, travel, media, telecommunications, energy, automotive, legal technology, HR technology, ad technology, marketing technology, regulatory technology, government, professional services, and gaming.
+
+Compliance-aware engineering areas mentioned on the site include VARA, ADGM FSRA, DFSA, MiCA, MAS, the EU AI Act, ISO/IEC 42001, NIST AI Risk Management Framework, GDPR, UAE PDPL, SOC 2-style controls, KYC/AML integrations, custody controls, audit trails, model documentation, explainability, and role-based access.
+
+## Technology Stack
+
+- AI: OpenAI, Azure OpenAI, Gemini, Anthropic, LangChain, LangGraph, LlamaIndex, RAG, LLM agents, multi-agent systems, MCP, AI guardrails, prompt management, model evaluation, human-in-the-loop AI.
+- Frontend: Next.js, React, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, Material UI, Shadcn UI, Redux Toolkit, Zustand, React Query, PWAs, responsive design, accessibility.
+- Backend: Node.js, NestJS, Express.js, Python, FastAPI, Django, REST APIs, GraphQL, WebSockets, gRPC, microservices, serverless functions, background workers, event-driven architecture.
+- Blockchain: Ethereum, Polygon, Base, Arbitrum, Optimism, Solidity, smart contracts, ERC-20, ERC-721, ERC-1155, account abstraction, Chainlink, IPFS, Ethers.js, Viem, Hardhat, Foundry.
+- Automation and integrations: n8n, Zapier, Make, webhooks, API integrations, CRM automation, ERP integration, email automation, workflow orchestration, approval workflows.
+- Data: PostgreSQL, MySQL, MongoDB, Redis, Supabase, Firebase, Elasticsearch, OpenSearch, data pipelines, real-time analytics, business intelligence.
+
+## Important URLs
+
+- https://www.furmotech.com/ - Audit-ready AI, blockchain, Web3 and custom software development services.
+- https://www.furmotech.com/sitemap.xml - XML sitemap for search engines.
+- https://www.furmotech.com/sitemap.txt - Plain-text URL list.
+- https://www.furmotech.com/robots.txt - Public crawler policy.
+- https://www.furmotech.com/llms.txt - Concise AI discovery file.
+
+## Social Profiles
+
+- https://www.linkedin.com/company/furthermore-technologies
+- https://x.com/furthermoretech
+- https://www.instagram.com/furthermoretech
+- https://www.facebook.com/furthermoretech

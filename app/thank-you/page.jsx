@@ -1,6 +1,15 @@
+import { absoluteSiteUrl } from "../../site.config.mjs";
+
 export const metadata = {
   title: "Thank You | Furthermore",
-  description: "Thank you for contacting Furthermore. We have received your strategy call request."
+  description: "Thank you for contacting Furthermore. We have received your strategy call request.",
+  alternates: {
+    canonical: absoluteSiteUrl("/thank-you")
+  },
+  robots: {
+    index: false,
+    follow: true
+  }
 };
 
 export default function ThankYouPage() {

@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "generate:discovery": "node scripts/generate-discovery-files.mjs",
+    "prebuild": "npm run generate:discovery",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

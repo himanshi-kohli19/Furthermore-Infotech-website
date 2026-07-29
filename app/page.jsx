@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import ContactForm from "./components/ContactForm";
+import { absoluteSiteUrl, siteConfig } from "../site.config.mjs";
 
 const services = [
   {
@@ -131,10 +132,13 @@ const faqs = [
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Furthermore",
-  url: "https://www.yourdomain.com/",
-  description:
-    "Furthermore is a specialist AI, blockchain and Web3 software development company building audit-ready products with dedicated architecture, AI coding agents, senior engineering review, human QA and written audit reports.",
+  name: siteConfig.name,
+  legalName: siteConfig.legalName,
+  url: absoluteSiteUrl("/"),
+  logo: absoluteSiteUrl("/assets/images/furthermore/furthermore-logo.png"),
+  image: absoluteSiteUrl(siteConfig.image),
+  description: siteConfig.description,
+  sameAs: siteConfig.socialLinks,
   areaServed: ["India", "Global"],
   knowsAbout: [
     "AI development company",
@@ -149,10 +153,19 @@ const organizationSchema = {
   ],
   contactPoint: {
     "@type": "ContactPoint",
-    email: "hello@yourdomain.com",
+    url: absoluteSiteUrl("/#contact"),
     contactType: "sales",
     areaServed: "Global"
   }
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteConfig.name,
+  url: absoluteSiteUrl("/"),
+  description: siteConfig.description,
+  inLanguage: "en"
 };
 
 const faqSchema = {
@@ -184,6 +197,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
       <script
         type="application/ld+json"

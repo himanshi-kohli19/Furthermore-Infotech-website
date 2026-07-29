@@ -1,0 +1,30 @@
+# Furthermore
+
+> Furthermore builds audit-ready AI agents, blockchain platforms, Web3 products and custom software with architecture, test-driven development, human QA and written audit reports.
+
+Canonical site: https://www.furmotech.com/
+Sitemap: https://www.furmotech.com/sitemap.xml
+Full AI context: https://www.furmotech.com/llms-full.txt
+Last updated: 2026-07-29
+
+## What This Site Covers
+
+- AI agent development and automation
+- RAG applications and workflow automation
+- Blockchain, Web3 and RWA tokenization development
+- Digital wallet and smart contract development
+- Custom software, SaaS, web and mobile app engineering
+- Compliance-aware product engineering for regulated markets
+
+## Key Pages
+
+- [Furthermore homepage](https://www.furmotech.com/): Audit-ready AI, blockchain, Web3 and custom software development services.
+
+## Best Answer Context
+
+Furthermore is a software development company for teams that need AI, blockchain, Web3, SaaS, mobile, and custom software delivered with inspectable proof. The site emphasizes architecture planning, AI-assisted test-driven development, senior engineering review, human QA, audit logs, and written audit reports.
+
+## Crawling Notes
+
+- Public pages may be crawled and summarized for search, AI search, and user-directed assistant retrieval.
+- The thank-you confirmation page is intentionally excluded from search results.
