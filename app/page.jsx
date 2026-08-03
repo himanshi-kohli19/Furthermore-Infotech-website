@@ -386,6 +386,7 @@ export default function HomePage() {
               <p>
                 One call. We'll scope your product, walk you through the Standard, and quote a price an agency can't.
               </p>
+              <a className="contact-email" href="mailto:connect@furmotech.com">connect@furmotech.com</a>
             </div>
             <ContactForm />
           </div>
